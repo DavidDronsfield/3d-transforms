@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cuboid</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="skeleton.css">
+		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+	</head>
+	<body>
+		<section id="cubeContainer">
+
+
+			<div class="cube cube1 show-front">
+				<figure class="front setZ"></figure>
+
+				<figure class="back">
+					<div class="downloadCV">
+						<p>Help yourself to a copy of my CV. Please choose a format on the right</p>
+					</div>
+				</figure>
+
+				<figure class="right"></figure>
+				<figure class="left"></figure>
+				<figure class="top"></figure>
+				<figure class="bottom">
+					<a class="emailMe" href="#">email me</a>
+				</figure>
+			</div>
+
+
+
+			<div class="cube cube2 show-back">
+				<figure class="front setZ">
+					<a class="emailMe" href="#">email me</a>
+				</figure>
+
+				<figure class="back">
+					<div class="aboutMe">
+						<h3>Hello, how do you do? <br />I'm Dave Dronsfield.</h3>
+						<p>I'm a front end web developer based in Chelmsford, Essex and I'm looking for a new position in an exciting company.</p>
+						<p>Would this face suit a desk near you?</p>					
+					</div>
+				</figure>
+
+				<figure class="right">
+					<div class="downloadCV">
+						<form>
+							<select name="CVformat">
+  								<option value="Word" selected>Word</option>
+  								<option value="Pages">Pages</option>
+  								<option value="PDF">PDF</option>
+ 							</select>
+ 							<input class="button-primary" type="submit" />
+						</form>				
+					</div>
+				</figure>
+				<figure class="left"></figure>
+				<figure class="top"></figure>
+				<figure class="bottom"></figure>
+			</div>
+
+		</section>
+
+		<div class="controls">
+			<button>Show 1</button>
+			<button>Show 2</button>
+			<button>Show 3</button>
+			<button>Show 4</button>
+			<button>Show 5</button>
+			<button>Show 6</button>
+		</div>
+
+		<script src="app.js" type="text/javascript"></script>
+	</body>
+</html>

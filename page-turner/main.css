@@ -1,0 +1,71 @@
+.book {
+	color: #fff;
+	font-size: 3em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.container {
+	width: 200px;
+	height: 260px;
+	display: inline-block;
+	position: relative;
+	-webkit-perspective: 800px;
+	        perspective: 800px;
+}
+
+#card {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	        transition: transform 1s;
+	-webkit-transform-origin: right center;
+		-ms-transform-origin: right center;
+			transform-origin: right center;
+}
+
+#card figure {
+	margin: 0;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+.page1 {
+	background-color: blue;
+	height: inherit;
+}
+
+#card .page3 {
+	background-color: red;
+}
+
+#card .page2 {
+	background-color: blue;
+	-webkit-transform: rotateY( 180deg );
+	        transform: rotateY( 180deg );
+}
+
+#card.flipped {
+	-webkit-transform: rotateY( 180deg );
+	        transform: rotateY( 180deg );
+}
+
+.page4 {
+	display: inline-block;
+	width: 200px;
+	height: 260px;
+	background-color: red;
+
+}
+
+#flip {
+	display: block;
+	margin: 20px auto;
+}
